@@ -9,7 +9,7 @@ import {ShoppingCartOutlined,LoginOutlined} from '@ant-design/icons'
 const Navbar = ({cart}) => {
   
   return (
-    // <BrowserRouter>
+    //// <BrowserRouter>
     
 
       
