@@ -3,8 +3,7 @@ import { Card } from 'antd';
 import { HStack,Container,Center,Box,Button} from "@chakra-ui/react"
 
 
-
-const App = (props,{addToCart}) => (
+const App = (props,{addToCart},item) => (
   <Center  >
 {/* <Box 
 mt={-5}
@@ -33,7 +32,7 @@ _hover={{transform: 'translatey(-2%)'  }}
     <HStack justifyContent={"space-between"} py={5} bg={'gray.200'} columns={[1,2,3]}>
     <Box position="absolute" >
     <Button 
-    onClick={()=>addToCart()}
+    onClick={()=>addToCart(item)}
     bg={'black'} color={'white'} ml={150} h={30} fontSize={'12px'} _hover={{bg:'gray'}}>ADD TO CART</Button>
     </Box>
     <Box position="absolute" fontSize="18px" fontWeight="bold" textAlign={'left'} ml={2}>{props.Price}</Box>

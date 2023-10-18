@@ -5,7 +5,9 @@ import Navbar from "./Components/Navbar";
 import { ChakraProvider ,Center, Box, SimpleGrid} from "@chakra-ui/react";
 import { Data } from "./Components/Data";
 import Cards from "./Components/Cards";
-import Cart from './Components/Cart';
+
+
+//import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
 export default function App() {
 
@@ -63,11 +65,14 @@ const removeItem = (Data) => {
  
   return (
     <ChakraProvider>
+
+        
       <Box bg="#ddfff7" height={"1400px"} columns={[1,2,2,3]}>
         <Navbar cart={cart} />
         <Center className="text-4xl font-bold mt-1">
         Featured Products
         </Center>
+
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={25} mb="20" >
           {Data.map((Data) => (
             <Cards 
@@ -82,6 +87,7 @@ const removeItem = (Data) => {
         © 2023 Zaher Zeinni
         </Center>
       </Box>
+   
     </ChakraProvider>
   );
           }

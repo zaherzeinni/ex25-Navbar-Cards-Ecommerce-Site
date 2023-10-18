@@ -20,6 +20,10 @@ export default function Cart({
   return (
     <div>
       <Center>
+
+        <Box>
+          it's a CARTTTTTTTTTTTTTTTTTTTTTTTTT
+        </Box>
         {cart.length > 0 ? (
           <Button colorScheme="red" onClick={clearFromCart}>
             Delete Items
