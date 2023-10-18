@@ -68,7 +68,9 @@ const removeItem = (Data) => {
 
         
       <Box bg="#ddfff7" height={"1400px"} columns={[1,2,2,3]}>
-        <Navbar cart={cart} />
+        <Navbar cart={cart} 
+        
+        />
         <Center className="text-4xl font-bold mt-1">
         Featured Products
         </Center>
