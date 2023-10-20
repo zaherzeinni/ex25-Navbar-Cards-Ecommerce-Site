@@ -7,7 +7,7 @@ import { Data } from "./Components/Data";
 import Cards from "./Components/Cards";
 
 
-//import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
+///import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
 export default function App() {
 
@@ -68,7 +68,11 @@ const removeItem = (Data) => {
 
         
       <Box bg="#ddfff7" height={"1400px"} columns={[1,2,2,3]}>
-        <Navbar cart={cart} 
+        <Navbar 
+        cart={cart} 
+        navigateTo={navigateTo}
+        setPage={setPage}
+        page={page}
         
         />
         <Center className="text-4xl font-bold mt-1">
@@ -78,10 +82,8 @@ const removeItem = (Data) => {
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={25} mb="20" >
           {Data.map((Data) => (
             <Cards 
-            Title={Data.Title}
-            Price={Data.Price}
-            IMG1={Data.IMG1}
             addToCart={addToCart}
+            Data={Data}
             />
           ))}
         </SimpleGrid>

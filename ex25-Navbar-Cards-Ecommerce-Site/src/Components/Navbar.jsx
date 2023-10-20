@@ -6,7 +6,7 @@ import {ShoppingCartOutlined,LoginOutlined} from '@ant-design/icons'
 
 //import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
-const Navbar = ({cart}) => {
+const Navbar = ({cart,navigateTo,page,setPage}) => {
   
   return (
     //// <BrowserRouter>
@@ -41,7 +41,7 @@ const Navbar = ({cart}) => {
             {cart.length}
             </span>
 
-          <Link href="/Components/Cart"> 
+          <Link navigateTo={cart}> 
          <ShoppingCartOutlined />Cart  
           </Link> 
          

@@ -18,7 +18,7 @@ export default function Cart({
   removeItem,
 }) {
   return (
-    <div>
+    <Box bg={"yellow"}>
       <Center>
 
         <Box>
@@ -97,6 +97,6 @@ export default function Cart({
           </div>
         ))}
       </div>
-    </div>
+    </Box>
   );
 }
