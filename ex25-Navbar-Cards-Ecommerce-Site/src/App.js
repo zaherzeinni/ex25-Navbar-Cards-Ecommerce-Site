@@ -7,7 +7,7 @@ import { Data } from "./Components/Data";
 import Cards from "./Components/Cards";
 
 
-///import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
+//import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
 export default function App() {
 
