@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar";
 import { ChakraProvider ,Center, Box, SimpleGrid} from "@chakra-ui/react";
 import { Data } from "./Components/Data";
 import Cards from "./Components/Cards";
-
+//
 
 //import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 
