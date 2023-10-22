@@ -2,7 +2,7 @@
 import { React } from 'react';
 import { Box } from '@chakra-ui/react';
 import {ShoppingCartOutlined,LoginOutlined} from '@ant-design/icons'
-
+//
 const Navbar = ({cart,navigateTo}) => {
 
 
